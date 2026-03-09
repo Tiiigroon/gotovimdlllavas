@@ -8,8 +8,8 @@ const Contacts = () => {
   const { t } = useLanguage();
 
   const info = [
-    { icon: Phone, label: t("contacts.phone"), value: "+375 (29) 123-45-67" },
-    { icon: Mail, label: t("contacts.email"), value: "info@gotovim.by" },
+    { icon: Phone, label: t("contacts.phone"), value: "+375 (33) 361-81-11" },
+    { icon: Mail, label: t("contacts.email"), value: "drugus88@gmail.com" },
     { icon: MapPin, label: t("contacts.address"), value: t("contacts.address.value") },
     { icon: Clock, label: t("contacts.hours"), value: t("contacts.hours.value") },
   ];
