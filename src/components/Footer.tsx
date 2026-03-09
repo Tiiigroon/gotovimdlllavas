@@ -27,8 +27,8 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg font-semibold mb-3">{t("contacts.title")}</h4>
             <div className="flex flex-col gap-2 font-body text-sm text-primary-foreground/70">
-              <span className="flex items-center gap-2"><Phone size={14} className="text-secondary" /> +375 (29) 123-45-67</span>
-              <span className="flex items-center gap-2"><Mail size={14} className="text-secondary" /> info@gotovim.by</span>
+              <span className="flex items-center gap-2"><Phone size={14} className="text-secondary" />+375 (33) 361-81-11</span>
+              <span className="flex items-center gap-2"><Mail size={14} className="text-secondary" />drugus88@gmail.com</span>
               <span className="flex items-center gap-2"><MapPin size={14} className="text-secondary" /> {t("contacts.address.value")}</span>
             </div>
           </div>
@@ -38,8 +38,8 @@ const Footer = () => {
           © {new Date().getFullYear()} Готовим Для Вас. {t("footer.rights")}.
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
