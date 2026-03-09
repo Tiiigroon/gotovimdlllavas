@@ -33,7 +33,7 @@ const OrderForm = () => {
 
   useEffect(() => { refreshCaptcha(); }, [refreshCaptcha]);
 
-  const isMinOrderMet = totalPrice >= 50;
+  const isMinOrderMet = totalPrice >= 100;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
