@@ -159,8 +159,8 @@ const OrderForm = () => {
 
       <Button
         type="submit"
-        disabled={sending}
-        className="w-full bg-secondary hover:bg-secondary-dark text-secondary-foreground font-body font-semibold text-base py-6"
+        disabled={sending || !isMinOrderMet}
+        className="w-full bg-secondary hover:bg-secondary-dark text-secondary-foreground font-body font-semibold text-base py-6 disabled:opacity-50"
       >
         {sending ? t("form.sending") : t("form.submit")}
       </Button>
