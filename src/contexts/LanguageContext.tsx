@@ -77,7 +77,8 @@ const translations: Translations = {
   "form.error": { ru: "Ошибка отправки. Попробуйте снова.", en: "Sending error. Please try again." },
   "form.captchaError": { ru: "Неверный ответ капчи", en: "Incorrect captcha answer" },
   "form.minOrder": { ru: "Минимальная сумма заказа — 50 BYN", en: "Minimum order amount is 50 BYN" },
-  "form.orderNotice": { ru: "⏰ Заказ продукции оформляется за 1–2 дня до доставки", en: "⏰ Orders are placed 1–2 days before delivery" },
+  "form.orderNotice": { ru: "⏰ Заказы принимаются не позднее чем за сутки до дня доставки (или по договорённости)", en: "⏰ Orders accepted no later than 1 day before delivery (or by arrangement)" },
+  "form.deliveryInfo": { ru: "🚚 При заказе на Минск, Дзержинск, Фаниполь от 100 руб — доставка до квартиры БЕСПЛАТНО", en: "🚚 Orders to Minsk, Dzerzhinsk, Fanipol from 100 BYN — FREE delivery to your door" },
 
   // Footer
   "footer.rights": { ru: "Все права защищены", en: "All rights reserved" },
