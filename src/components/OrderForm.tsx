@@ -33,8 +33,15 @@ const OrderForm = () => {
 
   useEffect(() => { refreshCaptcha(); }, [refreshCaptcha]);
 
+  const isMinOrderMet = totalPrice >= 50;
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!isMinOrderMet) {
+      toast.error(t("form.minOrder"));
+      return;
+    }
 
     if (parseInt(captchaInput) !== captcha.answer) {
       toast.error(t("form.captchaError"));
