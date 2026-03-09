@@ -163,7 +163,7 @@ const Prices = () => {
                 : "Orders to Minsk, Dzerzhinsk, Fanipol from 100 BYN — FREE delivery to your door"}
             </p>
             <p className="font-body text-sm text-muted-foreground">
-              💰 {lang === "ru" ? "Минимальная сумма заказа — 50 BYN" : "Minimum order — 50 BYN"}
+              💰 {lang === "ru" ? "Минимальная сумма заказа — 100 BYN" : "Minimum order — 100 BYN"}
             </p>
           </div>
 
