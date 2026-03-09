@@ -33,8 +33,15 @@ const OrderForm = () => {
 
   useEffect(() => { refreshCaptcha(); }, [refreshCaptcha]);
 
+  const isMinOrderMet = totalPrice >= 50;
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!isMinOrderMet) {
+      toast.error(t("form.minOrder"));
+      return;
+    }
 
     if (parseInt(captchaInput) !== captcha.answer) {
       toast.error(t("form.captchaError"));
@@ -82,6 +89,15 @@ const OrderForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 max-w-lg mx-auto">
+      <div className="bg-accent/50 border border-accent rounded-lg p-3 text-center">
+        <p className="font-body text-sm text-foreground">{t("form.orderNotice")}</p>
+      </div>
+
+      {!isMinOrderMet && items.length > 0 && (
+        <div className="bg-destructive/10 border border-destructive/30 rounded-lg p-3 text-center">
+          <p className="font-body text-sm text-destructive">{t("form.minOrder")}</p>
+        </div>
+      )}
       <div>
         <label className="block font-body text-sm font-medium text-foreground mb-1">{t("form.name")} *</label>
         <Input
@@ -143,8 +159,8 @@ const OrderForm = () => {
 
       <Button
         type="submit"
-        disabled={sending}
-        className="w-full bg-secondary hover:bg-secondary-dark text-secondary-foreground font-body font-semibold text-base py-6"
+        disabled={sending || !isMinOrderMet}
+        className="w-full bg-secondary hover:bg-secondary-dark text-secondary-foreground font-body font-semibold text-base py-6 disabled:opacity-50"
       >
         {sending ? t("form.sending") : t("form.submit")}
       </Button>

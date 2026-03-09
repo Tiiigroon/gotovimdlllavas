@@ -76,6 +76,8 @@ const translations: Translations = {
   "form.success": { ru: "Заказ отправлен! Мы свяжемся с вами.", en: "Order sent! We will contact you." },
   "form.error": { ru: "Ошибка отправки. Попробуйте снова.", en: "Sending error. Please try again." },
   "form.captchaError": { ru: "Неверный ответ капчи", en: "Incorrect captcha answer" },
+  "form.minOrder": { ru: "Минимальная сумма заказа — 50 BYN", en: "Minimum order amount is 50 BYN" },
+  "form.orderNotice": { ru: "⏰ Заказ продукции оформляется за 1–2 дня до доставки", en: "⏰ Orders are placed 1–2 days before delivery" },
 
   // Footer
   "footer.rights": { ru: "Все права защищены", en: "All rights reserved" },
