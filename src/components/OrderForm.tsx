@@ -89,6 +89,15 @@ const OrderForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 max-w-lg mx-auto">
+      <div className="bg-accent/50 border border-accent rounded-lg p-3 text-center">
+        <p className="font-body text-sm text-foreground">{t("form.orderNotice")}</p>
+      </div>
+
+      {!isMinOrderMet && items.length > 0 && (
+        <div className="bg-destructive/10 border border-destructive/30 rounded-lg p-3 text-center">
+          <p className="font-body text-sm text-destructive">{t("form.minOrder")}</p>
+        </div>
+      )}
       <div>
         <label className="block font-body text-sm font-medium text-foreground mb-1">{t("form.name")} *</label>
         <Input
