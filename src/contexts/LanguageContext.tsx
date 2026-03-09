@@ -79,7 +79,7 @@ const translations: Translations = {
 
   // Footer
   "footer.rights": { ru: "Все права защищены", en: "All rights reserved" },
-  "footer.tagline": { ru: "Домашняя еда с доставкой по Минску", en: "Homemade food delivery in Minsk" },
+  "footer.tagline": { ru: "Домашняя еда с доставкой по Минску и Минскому району", en: "Homemade food delivery in Minsk and Minsk region" },
 };
 
 interface LanguageContextType {
