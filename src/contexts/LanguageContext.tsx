@@ -17,7 +17,7 @@ const translations: Translations = {
 
   // Hero
   "hero.title": { ru: "Домашняя еда\nс душой и заботой", en: "Homemade Food\nwith Heart & Care" },
-  "hero.subtitle": { ru: "Готовим для вас в Минске из свежих продуктов по домашним рецептам", en: "We cook for you in Minsk using fresh ingredients and homemade recipes" },
+  "hero.subtitle": { ru: "Готовим для вас из свежих продуктов по домашним рецептам", en: "We cook for you using fresh ingredients and homemade recipes" },
   "hero.cta": { ru: "Смотреть меню", en: "View Menu" },
   "hero.order": { ru: "Сделать заказ", en: "Place Order" },
 
