@@ -26,7 +26,7 @@ const translations: Translations = {
   "about.subtitle": { ru: "Наша история", en: "Our Story" },
   "about.p1": { ru: "«Готовим Для Вас» — это домашняя еда приготовленная с душой. Мы верим, что вкусная еда объединяет людей.", en: "\"Cooking For You\" is homemade food prepared with heart. We believe delicious food brings people together." },
   "about.p2": { ru: "Каждое блюдо мы готовим из свежих и натуральных продуктов, используя проверенные домашние рецепты. Никаких полуфабрикатов — только настоящая домашняя кухня.", en: "Every dish is made from fresh, natural ingredients using tried-and-true homemade recipes. No pre-made products — only real home cooking." },
-  "about.p3": { ru: "Мы доставляем по всему Минску, чтобы вы могли насладиться вкусом домашней еды, не выходя из дома.", en: "We deliver across Minsk so you can enjoy homemade food without leaving your home." },
+  "about.p3": { ru: "Мы доставляем по всему Минску и Минскому району, чтобы вы могли насладиться вкусом домашней еды, не выходя из дома.", en: "We deliver across Minsk and the Minsk region so you can enjoy homemade food without leaving your home." },
   "about.values.title": { ru: "Наши ценности", en: "Our Values" },
   "about.value1.title": { ru: "Свежесть", en: "Freshness" },
   "about.value1.desc": { ru: "Только свежие продукты каждый день", en: "Only fresh products every day" },
