@@ -14,6 +14,7 @@ interface MenuItem {
   category: string;
   noteRu?: string;
   noteEn?: string;
+  image: string;
 }
 
 const menuItems: MenuItem[] = [
