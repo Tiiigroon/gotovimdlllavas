@@ -3,7 +3,7 @@ import pelmeniImg from "@/assets/menu/pelmeni.jpg";
 import varenikiImg from "@/assets/menu/vareniki.jpg";
 const bliniImg = "/lovable-uploads/30d8751f-7370-4753-9c16-c69d2595e9f9.jpg";
 import peaSoupImg from "@/assets/menu/pea-soup.jpg";
-import meatballSoupImg from "@/assets/menu/meatball-soup.jpg";
+const meatballSoupImg = "/lovable-uploads/5d7b0f75-1f15-411e-95c5-4983e70e4a61.jpg";
 import cheeseSoupImg from "@/assets/menu/cheese-soup.jpg";
 const borschtImg = "/lovable-uploads/ee9338eb-e962-4533-a768-a36ad6ab5629.jpg";
 import shchiImg from "@/assets/menu/shchi.jpg";
