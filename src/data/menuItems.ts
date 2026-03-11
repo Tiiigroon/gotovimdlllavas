@@ -1,4 +1,4 @@
-import cheburekiImg from "@/assets/menu/chebureki.jpg";
+const cheburekiImg = "/lovable-uploads/643440fb-4170-469d-bc45-71b32f2e3f6f.jpg";
 import pelmeniImg from "@/assets/menu/pelmeni.jpg";
 import varenikiImg from "@/assets/menu/vareniki.jpg";
 const bliniImg = "/lovable-uploads/30d8751f-7370-4753-9c16-c69d2595e9f9.jpg";
