@@ -5,7 +5,7 @@ const bliniImg = "/lovable-uploads/30d8751f-7370-4753-9c16-c69d2595e9f9.jpg";
 import peaSoupImg from "@/assets/menu/pea-soup.jpg";
 import meatballSoupImg from "@/assets/menu/meatball-soup.jpg";
 import cheeseSoupImg from "@/assets/menu/cheese-soup.jpg";
-import borschtImg from "@/assets/menu/borscht.jpg";
+const borschtImg = "/lovable-uploads/ee9338eb-e962-4533-a768-a36ad6ab5629.jpg";
 import shchiImg from "@/assets/menu/shchi.jpg";
 import cabbageRollsImg from "@/assets/menu/cabbage-rolls.jpg";
 import stuffedChickenImg from "@/assets/menu/stuffed-chicken.jpg";
