@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-display text-2xl font-bold mb-3">Готовим Для Вас</h3>
+            <h3 className="font-display text-2xl font-bold mb-3">Готовлю Для Вас</h3>
             <p className="font-body text-primary-foreground/70 text-sm">{t("footer.tagline")}</p>
           </div>
 
