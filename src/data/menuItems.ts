@@ -1,7 +1,13 @@
 const cheburekiImg = "/lovable-uploads/643440fb-4170-469d-bc45-71b32f2e3f6f.jpg";
 import pelmeniImg from "@/assets/menu/pelmeni.jpg";
 import varenikiImg from "@/assets/menu/vareniki.jpg";
-const bliniImg = "/lovable-uploads/30d8751f-7370-4753-9c16-c69d2595e9f9.jpg";
+import bliniMeatImg from "@/assets/menu/blini-meat.jpg";
+import bliniCottageRaisinsImg from "@/assets/menu/blini-cottage-raisins.jpg";
+import bliniAppleImg from "@/assets/menu/blini-apple.jpg";
+import bliniChickenMushroomImg from "@/assets/menu/blini-chicken-mushroom.jpg";
+import bliniLiverEggImg from "@/assets/menu/blini-liver-egg.jpg";
+import bliniHamCheeseImg from "@/assets/menu/blini-ham-cheese.jpg";
+import bliniCottageCheeseImg from "@/assets/menu/blini-cottage-cheese.jpg";
 import peaSoupImg from "@/assets/menu/pea-soup.jpg";
 const meatballSoupImg = "/lovable-uploads/5d7b0f75-1f15-411e-95c5-4983e70e4a61.jpg";
 import cheeseSoupImg from "@/assets/menu/cheese-soup.jpg";
@@ -60,15 +66,15 @@ export const menuItems: MenuItem[] = [
   { id: "f6", nameRu: "Вареники с картошкой", nameEn: "Vareniki with potato", price: 18, unit: "kg", category: "frozen", image: varenikiImg },
 
   // Охлаждённые — Блинчики
-  { id: "c1", nameRu: "Блинчики с капустой", nameEn: "Crepes with cabbage", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniImg },
-  { id: "c2", nameRu: "Блинчики творог + изюм", nameEn: "Crepes cottage cheese + raisins", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniImg },
-  { id: "c3", nameRu: "Блинчики творог + ягода", nameEn: "Crepes cottage cheese + berries", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniImg },
-  { id: "c4", nameRu: "Блинчики творог + яблоко + банан", nameEn: "Crepes cottage cheese + apple + banana", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniImg },
-  { id: "c5", nameRu: "Блинчики с яблоком", nameEn: "Crepes with apple", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniImg },
-  { id: "c6", nameRu: "Блинчики с мясом", nameEn: "Crepes with meat", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniImg },
-  { id: "c7", nameRu: "Блинчики ветчина + сыр", nameEn: "Crepes ham + cheese", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniImg },
-  { id: "c8", nameRu: "Блинчики курица + грибы", nameEn: "Crepes chicken + mushrooms", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniImg },
-  { id: "c9", nameRu: "Блинчики с печенью и яйцом", nameEn: "Crepes with liver & egg", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniImg },
+  { id: "c1", nameRu: "Блинчики с капустой", nameEn: "Crepes with cabbage", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniChickenMushroomImg },
+  { id: "c2", nameRu: "Блинчики творог + изюм", nameEn: "Crepes cottage cheese + raisins", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniCottageRaisinsImg },
+  { id: "c3", nameRu: "Блинчики творог + ягода", nameEn: "Crepes cottage cheese + berries", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniCottageCheeseImg },
+  { id: "c4", nameRu: "Блинчики творог + яблоко + банан", nameEn: "Crepes cottage cheese + apple + banana", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniAppleImg },
+  { id: "c5", nameRu: "Блинчики с яблоком", nameEn: "Crepes with apple", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniAppleImg },
+  { id: "c6", nameRu: "Блинчики с мясом", nameEn: "Crepes with meat", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniMeatImg },
+  { id: "c7", nameRu: "Блинчики ветчина + сыр", nameEn: "Crepes ham + cheese", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniHamCheeseImg },
+  { id: "c8", nameRu: "Блинчики курица + грибы", nameEn: "Crepes chicken + mushrooms", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniChickenMushroomImg },
+  { id: "c9", nameRu: "Блинчики с печенью и яйцом", nameEn: "Crepes with liver & egg", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniLiverEggImg },
 
   // Супы
   { id: "s1", nameRu: "Гороховый суп", nameEn: "Pea soup", price: 12, unit: "L", category: "soups", image: peaSoupImg },
