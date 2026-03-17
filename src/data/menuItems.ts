@@ -1,5 +1,6 @@
-const cheburekiImg = "/lovable-uploads/643440fb-4170-469d-bc45-71b32f2e3f6f.jpg";
-import pelmeniImg from "@/assets/menu/pelmeni.jpg";
+import cheburekiMeatImg from "@/assets/menu/chebureki-meat.jpg";
+import cheburekiHerbsImg from "@/assets/menu/chebureki-herbs.jpg";
+import pelmeniUserImg from "@/assets/menu/pelmeni-user.jpg";
 import varenikiImg from "@/assets/menu/vareniki.jpg";
 import bliniMeatImg from "@/assets/menu/blini-meat.jpg";
 import bliniCottageRaisinsImg from "@/assets/menu/blini-cottage-raisins.jpg";
@@ -9,10 +10,10 @@ import bliniLiverEggImg from "@/assets/menu/blini-liver-egg.jpg";
 import bliniHamCheeseImg from "@/assets/menu/blini-ham-cheese.jpg";
 import bliniCottageCheeseImg from "@/assets/menu/blini-cottage-cheese.jpg";
 import peaSoupImg from "@/assets/menu/pea-soup.jpg";
-const meatballSoupImg = "/lovable-uploads/5d7b0f75-1f15-411e-95c5-4983e70e4a61.jpg";
+import meatballSoupUserImg from "@/assets/menu/meatball-soup-user.jpg";
 import cheeseSoupImg from "@/assets/menu/cheese-soup.jpg";
-const borschtImg = "/lovable-uploads/ee9338eb-e962-4533-a768-a36ad6ab5629.jpg";
-import shchiImg from "@/assets/menu/shchi.jpg";
+import borschtUserImg from "@/assets/menu/borscht-user.jpg";
+import shchiUserImg from "@/assets/menu/shchi-user.jpg";
 import cabbageRollsImg from "@/assets/menu/cabbage-rolls.jpg";
 import stuffedChickenImg from "@/assets/menu/stuffed-chicken.jpg";
 import olivierImg from "@/assets/menu/olivier.jpg";
@@ -58,10 +59,10 @@ export interface MenuItem {
 
 export const menuItems: MenuItem[] = [
   // Замороженные — Чебуреки
-  { id: "f1", nameRu: "Чебуреки мясные / мясные с сыром", nameEn: "Chebureki meat / meat with cheese", price: 20, unit: "kg", category: "frozen", image: cheburekiImg },
-  { id: "f2", nameRu: "Чебуреки с грибами", nameEn: "Chebureki with mushrooms", price: 20, unit: "kg", category: "frozen", image: cheburekiImg },
-  { id: "f3", nameRu: "Чебуреки с картошкой, сыром, яйцом и зеленью", nameEn: "Chebureki with potato, cheese, egg & herbs", price: 20, unit: "kg", category: "frozen", image: cheburekiImg },
-  { id: "f4", nameRu: "Пельмени (свинина + курица)", nameEn: "Dumplings (pork + chicken)", price: 22, unit: "kg", category: "frozen", image: pelmeniImg },
+  { id: "f1", nameRu: "Чебуреки мясные / мясные с сыром", nameEn: "Chebureki meat / meat with cheese", price: 20, unit: "kg", category: "frozen", image: cheburekiMeatImg },
+  { id: "f2", nameRu: "Чебуреки с грибами", nameEn: "Chebureki with mushrooms", price: 20, unit: "kg", category: "frozen", image: cheburekiHerbsImg },
+  { id: "f3", nameRu: "Чебуреки с картошкой, сыром, яйцом и зеленью", nameEn: "Chebureki with potato, cheese, egg & herbs", price: 20, unit: "kg", category: "frozen", image: cheburekiHerbsImg },
+  { id: "f4", nameRu: "Пельмени (свинина + курица)", nameEn: "Dumplings (pork + chicken)", price: 22, unit: "kg", category: "frozen", image: pelmeniUserImg },
   { id: "f5", nameRu: "Вареники с творогом / творогом и изюмом", nameEn: "Vareniki with cottage cheese / cottage cheese & raisins", price: 18, unit: "kg", category: "frozen", image: varenikiImg },
   { id: "f6", nameRu: "Вареники с картошкой", nameEn: "Vareniki with potato", price: 18, unit: "kg", category: "frozen", image: varenikiImg },
 
@@ -78,10 +79,10 @@ export const menuItems: MenuItem[] = [
 
   // Супы
   { id: "s1", nameRu: "Гороховый суп", nameEn: "Pea soup", price: 12, unit: "L", category: "soups", image: peaSoupImg },
-  { id: "s2", nameRu: "Суп с фрикадельками", nameEn: "Meatball soup", price: 12, unit: "L", category: "soups", image: meatballSoupImg },
+  { id: "s2", nameRu: "Суп с фрикадельками", nameEn: "Meatball soup", price: 12, unit: "L", category: "soups", image: meatballSoupUserImg },
   { id: "s3", nameRu: "Сырный суп", nameEn: "Cheese soup", price: 12, unit: "L", category: "soups", image: cheeseSoupImg },
-  { id: "s4", nameRu: "Борщ", nameEn: "Borscht", price: 12, unit: "L", category: "soups", image: borschtImg },
-  { id: "s5", nameRu: "Щи", nameEn: "Shchi (cabbage soup)", price: 12, unit: "L", category: "soups", image: shchiImg },
+  { id: "s4", nameRu: "Борщ", nameEn: "Borscht", price: 12, unit: "L", category: "soups", image: borschtUserImg },
+  { id: "s5", nameRu: "Щи", nameEn: "Shchi (cabbage soup)", price: 12, unit: "L", category: "soups", image: shchiUserImg },
 
   // Полуфабрикаты
   { id: "sf1", nameRu: "Голубцы", nameEn: "Cabbage rolls", price: 22, unit: "kg", category: "semifinished", noteRu: "нужно тушить", noteEn: "needs stewing", image: cabbageRollsImg },
