@@ -26,6 +26,7 @@ import crabSaladImg from "@/assets/menu/crab-salad.jpg";
 import chickenPineappleSaladImg from "@/assets/menu/chicken-pineapple-salad.jpg";
 import potatoesImg from "@/assets/menu/potatoes.jpg";
 import drumsticksImg from "@/assets/menu/drumsticks.jpg";
+import drumsticksFriedImg from "@/assets/menu/drumsticks-fried.jpg";
 import dranikiImg from "@/assets/menu/draniki.jpg";
 import cutletsImg from "@/assets/menu/cutlets.jpg";
 import cutletsBatterImg from "@/assets/menu/cutlets-batter.jpg";
