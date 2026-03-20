@@ -65,7 +65,7 @@ export const menuItems: MenuItem[] = [
   { id: "f3", nameRu: "Чебуреки с картошкой, сыром, яйцом и зеленью", nameEn: "Chebureki with potato, cheese, egg & herbs", price: 20, unit: "kg", category: "frozen", image: cheburekiHerbsImg },
   { id: "f4", nameRu: "Пельмени (свинина + курица)", nameEn: "Dumplings (pork + chicken)", price: 22, unit: "kg", category: "frozen", image: pelmeniUserImg },
   { id: "f5", nameRu: "Вареники с творогом / творогом и изюмом", nameEn: "Vareniki with cottage cheese / cottage cheese & raisins", price: 18, unit: "kg", category: "frozen", image: varenikiImg },
-  { id: "f6", nameRu: "Вареники с картошкой", nameEn: "Vareniki with potato", price: 18, unit: "kg", category: "frozen", image: varenikiImg },
+  { id: "f6", nameRu: "Вареники с картошкой", nameEn: "Vareniki with potato", price: 18, unit: "kg", category: "frozen", image: varenikiPotatoImg },
 
   // Охлаждённые — Блинчики
   { id: "c1", nameRu: "Блинчики с капустой", nameEn: "Crepes with cabbage", price: 20, unit: "kg", category: "chilled", noteRu: "нужно обжарить", noteEn: "needs frying", image: bliniChickenMushroomImg },
