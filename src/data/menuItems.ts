@@ -26,6 +26,7 @@ import crabSaladImg from "@/assets/menu/crab-salad.jpg";
 import chickenPineappleSaladImg from "@/assets/menu/chicken-pineapple-salad.jpg";
 import potatoesImg from "@/assets/menu/potatoes.jpg";
 import drumsticksImg from "@/assets/menu/drumsticks.jpg";
+import drumsticksFriedImg from "@/assets/menu/drumsticks-fried.jpg";
 import dranikiImg from "@/assets/menu/draniki.jpg";
 import cutletsImg from "@/assets/menu/cutlets.jpg";
 import cutletsBatterImg from "@/assets/menu/cutlets-batter.jpg";
@@ -101,7 +102,7 @@ export const menuItems: MenuItem[] = [
   // Доставка в готовом виде
   { id: "r1", nameRu: "Картофель по-деревенски", nameEn: "Country-style potatoes", price: 20, unit: "kg", category: "ready", image: potatoesImg },
   { id: "r2", nameRu: "Окорочка в медово-соевом соусе", nameEn: "Drumsticks in honey-soy sauce", price: 32, unit: "kg", category: "ready", image: drumsticksImg },
-  { id: "r3", nameRu: "Окорочка жареные", nameEn: "Fried drumsticks", price: 30, unit: "kg", category: "ready", image: drumsticksImg },
+  { id: "r3", nameRu: "Окорочка жареные", nameEn: "Fried drumsticks", price: 30, unit: "kg", category: "ready", image: drumsticksFriedImg },
   { id: "r4", nameRu: "Драники с мясом / курицей и грибами / грибами", nameEn: "Potato pancakes with meat / chicken & mushrooms / mushrooms", price: 22, unit: "kg", category: "ready", image: dranikiImg },
   { id: "r5", nameRu: "Котлеты рубленые", nameEn: "Chopped cutlets", price: 28, unit: "kg", category: "ready", image: cutletsImg },
   { id: "r6", nameRu: "Котлеты в сложном кляре с сыром", nameEn: "Cutlets in batter with cheese", price: 28, unit: "kg", category: "ready", noteRu: "10 мин протушить", noteEn: "simmer 10 min", image: cutletsBatterImg },
