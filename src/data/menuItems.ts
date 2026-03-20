@@ -2,6 +2,7 @@ import cheburekiMeatImg from "@/assets/menu/chebureki-meat.jpg";
 import cheburekiHerbsImg from "@/assets/menu/chebureki-herbs.jpg";
 import pelmeniUserImg from "@/assets/menu/pelmeni-user.jpg";
 import varenikiImg from "@/assets/menu/vareniki.jpg";
+import varenikiPotatoImg from "@/assets/menu/vareniki-potato.jpg";
 import bliniMeatImg from "@/assets/menu/blini-meat.jpg";
 import bliniCottageRaisinsImg from "@/assets/menu/blini-cottage-raisins.jpg";
 import bliniAppleImg from "@/assets/menu/blini-apple.jpg";
