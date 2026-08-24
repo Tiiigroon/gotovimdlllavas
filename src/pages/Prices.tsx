@@ -14,14 +14,12 @@ const Prices = () => {
 
   const categories = [
     { key: "all", labelRu: "Все", labelEn: "All" },
-    { key: "frozen", labelRu: "🧊 Замороженные", labelEn: "🧊 Frozen" },
-    { key: "chilled", labelRu: "❄️ Охлаждённые", labelEn: "❄️ Chilled" },
+    { key: "chilled", labelRu: "🥞 Блинчики", labelEn: "🥞 Crepes" },
     { key: "soups", labelRu: "🍲 Супы", labelEn: "🍲 Soups" },
-    { key: "semifinished", labelRu: "🥘 Полуфабрикаты", labelEn: "🥘 Semi-finished" },
     { key: "salads", labelRu: "🥗 Салаты", labelEn: "🥗 Salads" },
-    { key: "ready", labelRu: "🍽 Готовые блюда", labelEn: "🍽 Ready-made" },
+    { key: "ready", labelRu: "🍽 Готовые блюда и полуфабрикаты", labelEn: "🍽 Ready-made & semi-finished" },
     { key: "desserts", labelRu: "🍰 Десерты", labelEn: "🍰 Desserts" },
-    { key: "other", labelRu: "🫙 Прочее", labelEn: "🫙 Other" },
+    { key: "frozen", labelRu: "🧊 Замороженные", labelEn: "🧊 Frozen" },
   ];
 
   const filtered = activeCategory === "all" ? menuItems : menuItems.filter((i) => i.category === activeCategory);
