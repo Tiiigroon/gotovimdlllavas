@@ -72,6 +72,11 @@ const Prices = () => {
             <p className="font-body text-sm text-muted-foreground">
               💰 {lang === "ru" ? "Минимальная сумма заказа — 100 BYN" : "Minimum order — 100 BYN"}
             </p>
+            <p className="font-body text-sm text-foreground">
+              🍱 {lang === "ru"
+                ? "Комплексные обеды — 12 руб. Бесплатная доставка на один адрес от 2-х комплексов. Блюда в пределах комплекса можно изменять по вашему желанию. Заказ на следующий день не позднее 19:00. Доставка с 11:30 до 13:30."
+                : "Lunch sets — 12 BYN. Free delivery to one address from 2 sets. Dishes within a set can be changed to your liking. Order for the next day no later than 19:00. Delivery 11:30–13:30."}
+            </p>
           </div>
 
           {/* Category Tabs */}
