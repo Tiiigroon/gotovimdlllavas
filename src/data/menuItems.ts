@@ -23,14 +23,14 @@ import cabbageRollsImg from "@/assets/menu/cabbage-rolls.jpg";
 import cabbageRollsUserImg from "@/assets/menu/cabbage-rolls-user.jpg";
 import stuffedChickenImg from "@/assets/menu/stuffed-chicken.jpg";
 import olivierImg from "@/assets/menu/olivier.jpg";
-import shubaImg from "@/assets/menu/shuba.jpg";
-import mimosaImg from "@/assets/menu/mimosa.jpg";
-import chickenSaladImg from "@/assets/menu/chicken-salad.jpg";
 import shapkaSaladImg from "@/assets/menu/shapka-salad.jpg";
-import crabSaladImg from "@/assets/menu/crab-salad.jpg";
-import chickenPineappleSaladImg from "@/assets/menu/chicken-pineapple-salad.jpg";
-import orangeSaladImg from "@/assets/menu/orange-salad.jpg";
 import hawaiianSaladImg from "@/assets/menu/hawaiian-salad.jpg";
+import shubaUserImg from "@/assets/menu/user-salads/селедкаподшубой.JPG.asset.json";
+import mimosaUserImg from "@/assets/menu/user-salads/мимоза.jpg.asset.json";
+import smokedChickenSaladUserImg from "@/assets/menu/user-salads/салатскопченнойкурицой.jpg.asset.json";
+import crabSaladUserImg from "@/assets/menu/user-salads/салатскрабовымипалочками.jpg.asset.json";
+import chickenPineappleSaladUserImg from "@/assets/menu/user-salads/салатсгрибамииананасам.jpg.asset.json";
+import orangeSaladUserImg from "@/assets/menu/user-salads/фирменныйсапельсином.jpg.asset.json";
 import potatoesImg from "@/assets/menu/potatoes.jpg";
 import drumsticksImg from "@/assets/menu/drumsticks.jpg";
 import drumsticksFriedImg from "@/assets/menu/drumsticks-fried.jpg";
@@ -90,13 +90,13 @@ export const menuItems: MenuItem[] = [
 
   // Салаты — 28 руб/кг
   { id: "sa1", nameRu: "Салат Оливье с мясом или колбасой", nameEn: "Olivier salad with meat or sausage", price: 28, unit: "kg", category: "salads", image: olivierImg },
-  { id: "sa2", nameRu: "Селёдка под шубой", nameEn: "Herring under fur coat", price: 28, unit: "kg", category: "salads", image: shubaImg },
-  { id: "sa3", nameRu: "Мимоза (с тунцом)", nameEn: "Mimosa salad (with tuna)", price: 28, unit: "kg", category: "salads", image: mimosaImg },
+  { id: "sa2", nameRu: "Селёдка под шубой", nameEn: "Herring under fur coat", price: 28, unit: "kg", category: "salads", image: shubaUserImg.url },
+  { id: "sa3", nameRu: "Мимоза (с тунцом)", nameEn: "Mimosa salad (with tuna)", price: 28, unit: "kg", category: "salads", image: mimosaUserImg.url },
   { id: "sa4", nameRu: "Шапка Мономаха (с орехами и сухофруктами)", nameEn: "Monomakh's hat (nuts & dried fruits)", price: 28, unit: "kg", category: "salads", image: shapkaSaladImg },
-  { id: "sa5", nameRu: "Салат с копчёной курицей", nameEn: "Smoked chicken salad", price: 28, unit: "kg", category: "salads", image: chickenSaladImg },
-  { id: "sa6", nameRu: "Салат с крабовыми палочками", nameEn: "Crab stick salad", price: 28, unit: "kg", category: "salads", image: crabSaladImg },
-  { id: "sa7", nameRu: "Салат с курицей, грибами и ананасами", nameEn: "Chicken, mushroom & pineapple salad", price: 28, unit: "kg", category: "salads", image: chickenPineappleSaladImg },
-  { id: "sa8", nameRu: "Салат Фирменный с апельсином", nameEn: "Signature salad with orange", price: 28, unit: "kg", category: "salads", image: orangeSaladImg },
+  { id: "sa5", nameRu: "Салат с копчёной курицей", nameEn: "Smoked chicken salad", price: 28, unit: "kg", category: "salads", image: smokedChickenSaladUserImg.url },
+  { id: "sa6", nameRu: "Салат с крабовыми палочками", nameEn: "Crab stick salad", price: 28, unit: "kg", category: "salads", image: crabSaladUserImg.url },
+  { id: "sa7", nameRu: "Салат с курицей, грибами и ананасами", nameEn: "Chicken, mushroom & pineapple salad", price: 28, unit: "kg", category: "salads", image: chickenPineappleSaladUserImg.url },
+  { id: "sa8", nameRu: "Салат Фирменный с апельсином", nameEn: "Signature salad with orange", price: 28, unit: "kg", category: "salads", image: orangeSaladUserImg.url },
   { id: "sa9", nameRu: "Салат Гавайский", nameEn: "Hawaiian salad", price: 28, unit: "kg", category: "salads", image: hawaiianSaladImg },
 
   // Готовые блюда и полуфабрикаты
