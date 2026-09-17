@@ -1,3 +1,7 @@
+import combo1Img from "@/assets/menu/combo-1.jpg";
+import combo2Img from "@/assets/menu/combo-2.jpg";
+import combo3Img from "@/assets/menu/combo-3.jpg";
+import combo4Img from "@/assets/menu/combo-4.jpg";
 import cheburekiMeatImg from "@/assets/menu/chebureki-meat.jpg";
 import cheburekiHerbsImg from "@/assets/menu/chebureki-herbs.jpg";
 import pelmeniUserImg from "@/assets/menu/pelmeni-user.jpg";
@@ -137,4 +141,10 @@ export const menuItems: MenuItem[] = [
   { id: "f5", nameRu: "Вареники с творогом", nameEn: "Vareniki with cottage cheese", price: 18, unit: "kg", category: "frozen", image: varenikiImg },
   { id: "f5b", nameRu: "Вареники с творогом и изюмом", nameEn: "Vareniki with cottage cheese & raisins", price: 18, unit: "kg", category: "frozen", image: varenikiImg },
   { id: "f6", nameRu: "Вареники с картошкой", nameEn: "Vareniki with potato", price: 18, unit: "kg", category: "frozen", image: varenikiPotatoImg },
+
+  // Комплексные обеды — 12 руб, доставка 11:30–13:30
+  { id: "lc1", nameRu: "Комплекс №1 (вторник и четверг)", nameEn: "Lunch set №1 (Tue & Thu)", price: 12, unit: "pcs", category: "lunch", noteRu: "Борщ со свёклой • Драники с мясом • Блинчики с творогом", noteEn: "Beetroot borscht • Draniki with meat • Cottage cheese crepes", image: combo1Img },
+  { id: "lc2", nameRu: "Комплекс №2 (вторник и четверг)", nameEn: "Lunch set №2 (Tue & Thu)", price: 12, unit: "pcs", category: "lunch", noteRu: "Суп сырный • Голубцы • Оладушки со сметаной", noteEn: "Cheese soup • Cabbage rolls • Pancakes with sour cream", image: combo2Img },
+  { id: "lc3", nameRu: "Комплекс №3 (среда и пятница)", nameEn: "Lunch set №3 (Wed & Fri)", price: 12, unit: "pcs", category: "lunch", noteRu: "Суп гороховый с колбасками • Котлета с сыром + картофельное пюре • Блинчики с карамелизированным яблоком", noteEn: "Pea soup with sausage • Cheese cutlet + mashed potatoes • Crepes with caramelized apple", image: combo3Img },
+  { id: "lc4", nameRu: "Комплекс №4 (среда и пятница)", nameEn: "Lunch set №4 (Wed & Fri)", price: 12, unit: "pcs", category: "lunch", noteRu: "Суп куриный • Мясо запечённое с помидором + картофельные дольки • Сырники со сметаной", noteEn: "Chicken soup • Baked meat with tomato + potato wedges • Syrniki with sour cream", image: combo4Img },
 ];
