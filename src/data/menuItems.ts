@@ -66,6 +66,8 @@ export interface MenuItem {
   noteRu?: string;
   noteEn?: string;
   image: string;
+  dayBadgeRu?: string;
+  dayBadgeEn?: string;
 }
 
 export const menuItems: MenuItem[] = [
@@ -143,8 +145,8 @@ export const menuItems: MenuItem[] = [
   { id: "f6", nameRu: "Вареники с картошкой", nameEn: "Vareniki with potato", price: 18, unit: "kg", category: "frozen", image: varenikiPotatoImg },
 
   // Комплексные обеды — 12 руб, доставка 11:30–13:30
-  { id: "lc1", nameRu: "Комплекс №1 (вторник и четверг)", nameEn: "Lunch set №1 (Tue & Thu)", price: 12, unit: "pcs", category: "lunch", noteRu: "Борщ со свёклой • Драники с мясом • Блинчики с творогом", noteEn: "Beetroot borscht • Draniki with meat • Cottage cheese crepes", image: combo1Img },
-  { id: "lc2", nameRu: "Комплекс №2 (вторник и четверг)", nameEn: "Lunch set №2 (Tue & Thu)", price: 12, unit: "pcs", category: "lunch", noteRu: "Суп сырный • Голубцы • Оладушки со сметаной", noteEn: "Cheese soup • Cabbage rolls • Pancakes with sour cream", image: combo2Img },
-  { id: "lc3", nameRu: "Комплекс №3 (среда и пятница)", nameEn: "Lunch set №3 (Wed & Fri)", price: 12, unit: "pcs", category: "lunch", noteRu: "Суп гороховый с колбасками • Котлета с сыром + картофельное пюре • Блинчики с карамелизированным яблоком", noteEn: "Pea soup with sausage • Cheese cutlet + mashed potatoes • Crepes with caramelized apple", image: combo3Img },
-  { id: "lc4", nameRu: "Комплекс №4 (среда и пятница)", nameEn: "Lunch set №4 (Wed & Fri)", price: 12, unit: "pcs", category: "lunch", noteRu: "Суп куриный • Мясо запечённое с помидором + картофельные дольки • Сырники со сметаной", noteEn: "Chicken soup • Baked meat with tomato + potato wedges • Syrniki with sour cream", image: combo4Img },
+  { id: "lc1", nameRu: "Комплекс №1", nameEn: "Lunch set №1", price: 12, unit: "pcs", category: "lunch", noteRu: "Только во вторник и четверг! Борщ со свёклой • Драники с мясом • Блинчики с творогом", noteEn: "Tuesdays & Thursdays only! Beetroot borscht • Draniki with meat • Cottage cheese crepes", image: combo1Img, dayBadgeRu: "Только вт и чт", dayBadgeEn: "Tue & Thu only" },
+  { id: "lc2", nameRu: "Комплекс №2", nameEn: "Lunch set №2", price: 12, unit: "pcs", category: "lunch", noteRu: "Только во вторник и четверг! Суп сырный • Голубцы • Оладушки со сметаной", noteEn: "Tuesdays & Thursdays only! Cheese soup • Cabbage rolls • Pancakes with sour cream", image: combo2Img, dayBadgeRu: "Только вт и чт", dayBadgeEn: "Tue & Thu only" },
+  { id: "lc3", nameRu: "Комплекс №3", nameEn: "Lunch set №3", price: 12, unit: "pcs", category: "lunch", noteRu: "Только в среду и пятницу! Суп гороховый с колбасками • Котлета с сыром + картофельное пюре • Блинчики с карамелизированным яблоком", noteEn: "Wednesdays & Fridays only! Pea soup with sausage • Cheese cutlet + mashed potatoes • Crepes with caramelized apple", image: combo3Img, dayBadgeRu: "Только ср и пт", dayBadgeEn: "Wed & Fri only" },
+  { id: "lc4", nameRu: "Комплекс №4", nameEn: "Lunch set №4", price: 12, unit: "pcs", category: "lunch", noteRu: "Только в среду и пятницу! Суп куриный • Мясо запечённое с помидором + картофельные дольки • Сырники со сметаной", noteEn: "Wednesdays & Fridays only! Chicken soup • Baked meat with tomato + potato wedges • Syrniki with sour cream", image: combo4Img, dayBadgeRu: "Только ср и пт", dayBadgeEn: "Wed & Fri only" },
 ];
