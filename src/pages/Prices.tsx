@@ -14,6 +14,7 @@ const Prices = () => {
 
   const categories = [
     { key: "all", labelRu: "Все", labelEn: "All" },
+    { key: "lunch", labelRu: "🍱 Комплексные обеды", labelEn: "🍱 Lunch sets" },
     { key: "chilled", labelRu: "🥞 Блинчики", labelEn: "🥞 Crepes" },
     { key: "soups", labelRu: "🍲 Супы", labelEn: "🍲 Soups" },
     { key: "salads", labelRu: "🥗 Салаты", labelEn: "🥗 Salads" },

@@ -55,10 +55,6 @@ import syrnikiImg from "@/assets/menu/syrniki.jpg";
 import oladyiImg from "@/assets/menu/oladyi.jpg";
 import honeyCakeImg from "@/assets/menu/honey-cake.jpg";
 import grafskieImg from "@/assets/menu/grafskie.jpg";
-import combo1Img from "@/assets/menu/combo-1.jpg";
-import combo2Img from "@/assets/menu/combo-2.jpg";
-import combo3Img from "@/assets/menu/combo-3.jpg";
-import combo4Img from "@/assets/menu/combo-4.jpg";
 
 export interface MenuItem {
   id: string;
