@@ -74,8 +74,8 @@ const Prices = () => {
             </p>
             <p className="font-body text-sm text-foreground">
               🍱 {lang === "ru"
-                ? "Комплексные обеды — 12 руб. Бесплатная доставка на один адрес от 2-х комплексов. Блюда в пределах комплекса можно изменять по вашему желанию. Заказ на следующий день не позднее 19:00. Доставка с 11:30 до 13:30."
-                : "Lunch sets — 12 BYN. Free delivery to one address from 2 sets. Dishes within a set can be changed to your liking. Order for the next day no later than 19:00. Delivery 11:30–13:30."}
+                ? "Комплексные обеды — 12 руб. Комплексы №1 и №2 можно заказать и получить ТОЛЬКО во вторник и четверг, комплексы №3 и №4 — ТОЛЬКО в среду и пятницу. Бесплатная доставка на один адрес от 2-х комплексов. Блюда в пределах комплекса можно изменять по вашему желанию. Заказ на следующий день не позднее 19:00. Доставка с 11:30 до 13:30."
+                : "Lunch sets — 12 BYN. Sets №1 and №2 can be ordered and delivered ONLY on Tuesdays and Thursdays, sets №3 and №4 — ONLY on Wednesdays and Fridays. Free delivery to one address from 2 sets. Dishes within a set can be changed to your liking. Order for the next day no later than 19:00. Delivery 11:30–13:30."}
             </p>
           </div>
 
@@ -119,6 +119,11 @@ const Prices = () => {
                   <h3 className="font-display text-base font-semibold text-foreground leading-tight">
                     {lang === "ru" ? item.nameRu : item.nameEn}
                   </h3>
+                  {item.dayBadgeRu && item.dayBadgeEn && (
+                    <span className="inline-block self-start mt-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground font-body text-xs font-bold uppercase tracking-wide">
+                      📅 {lang === "ru" ? item.dayBadgeRu : item.dayBadgeEn}
+                    </span>
+                  )}
                   {(item.noteRu || item.noteEn) && (
                     <p className="font-body text-xs text-muted-foreground mt-1 italic">
                       💡 {lang === "ru" ? item.noteRu : item.noteEn}
