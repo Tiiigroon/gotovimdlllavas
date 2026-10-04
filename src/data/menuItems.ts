@@ -1,7 +1,7 @@
-import combo1Img from "@/assets/menu/combo-1.jpg";
-import combo2Img from "@/assets/menu/combo-2.jpg";
-import combo3Img from "@/assets/menu/combo-3.jpg";
-import combo4Img from "@/assets/menu/combo-4.jpg";
+import combo1Img from "@/assets/menu/combo-1-monday.jpg";
+import combo2Img from "@/assets/menu/combo-2-monday.jpg";
+import combo3Img from "@/assets/menu/combo-3-tuesday.jpg";
+import combo4Img from "@/assets/menu/combo-4-tuesday.jpg";
 import cheburekiMeatImg from "@/assets/menu/chebureki-meat.jpg";
 import cheburekiHerbsImg from "@/assets/menu/chebureki-herbs.jpg";
 import pelmeniUserImg from "@/assets/menu/pelmeni-user.jpg";
@@ -145,8 +145,8 @@ export const menuItems: MenuItem[] = [
   { id: "f6", nameRu: "Вареники с картошкой", nameEn: "Vareniki with potato", price: 18, unit: "kg", category: "frozen", image: varenikiPotatoImg },
 
   // Комплексные обеды — 12 руб, доставка 11:30–13:30
-  { id: "lc1", nameRu: "Комплекс №1", nameEn: "Lunch set №1", price: 12, unit: "pcs", category: "lunch", noteRu: "Только во вторник и четверг! Борщ со свёклой • Драники с мясом • Блинчики с творогом", noteEn: "Tuesdays & Thursdays only! Beetroot borscht • Draniki with meat • Cottage cheese crepes", image: combo1Img, dayBadgeRu: "Только вт и чт", dayBadgeEn: "Tue & Thu only" },
-  { id: "lc2", nameRu: "Комплекс №2", nameEn: "Lunch set №2", price: 12, unit: "pcs", category: "lunch", noteRu: "Только во вторник и четверг! Суп сырный • Голубцы • Оладушки со сметаной", noteEn: "Tuesdays & Thursdays only! Cheese soup • Cabbage rolls • Pancakes with sour cream", image: combo2Img, dayBadgeRu: "Только вт и чт", dayBadgeEn: "Tue & Thu only" },
-  { id: "lc3", nameRu: "Комплекс №3", nameEn: "Lunch set №3", price: 12, unit: "pcs", category: "lunch", noteRu: "Только в среду и пятницу! Суп гороховый с колбасками • Котлета с сыром + картофельное пюре • Блинчики с карамелизированным яблоком", noteEn: "Wednesdays & Fridays only! Pea soup with sausage • Cheese cutlet + mashed potatoes • Crepes with caramelized apple", image: combo3Img, dayBadgeRu: "Только ср и пт", dayBadgeEn: "Wed & Fri only" },
-  { id: "lc4", nameRu: "Комплекс №4", nameEn: "Lunch set №4", price: 12, unit: "pcs", category: "lunch", noteRu: "Только в среду и пятницу! Суп куриный • Мясо запечённое с помидором + картофельные дольки • Сырники со сметаной", noteEn: "Wednesdays & Fridays only! Chicken soup • Baked meat with tomato + potato wedges • Syrniki with sour cream", image: combo4Img, dayBadgeRu: "Только ср и пт", dayBadgeEn: "Wed & Fri only" },
+  { id: "lc1", nameRu: "Комплекс №1", nameEn: "Lunch set №1", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: щи из свежей капусты • 2-ое: котлеты печёночные + макароны • 3-е: блинчики творог, яблоко, банан", noteEn: "First: fresh cabbage shchi • Main: liver cutlets with pasta • Dessert: cottage cheese, apple & banana crepes", image: combo1Img, dayBadgeRu: "Только в понедельник", dayBadgeEn: "Monday only" },
+  { id: "lc2", nameRu: "Комплекс №2", nameEn: "Lunch set №2", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: сырный суп • 2-ое: мясо, запечённое под помидором + картофельные дольки • 3-е: оладушки со сметаной • Дополнительно: порция салата оливье — 3 руб.", noteEn: "First: cheese soup • Main: baked meat with tomato and potato wedges • Dessert: pancakes with sour cream • Extra: Olivier salad portion — 3 BYN", image: combo2Img, dayBadgeRu: "Только в понедельник", dayBadgeEn: "Monday only" },
+  { id: "lc3", nameRu: "Комплекс №1", nameEn: "Lunch set №1", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: борщ • 2-ое: куриное филе в кляре + гречка • 3-е: блинчики с карамелизированным яблоком", noteEn: "First: borscht • Main: battered chicken fillet with buckwheat • Dessert: crepes with caramelized apple", image: combo3Img, dayBadgeRu: "Только во вторник", dayBadgeEn: "Tuesday only" },
+  { id: "lc4", nameRu: "Комплекс №2", nameEn: "Lunch set №2", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: суп гороховый • 2-ое: котлета с сыром + картофельное пюре • 3-е: сырники • Дополнительно: порция салата с крабовыми палочками — 3 руб.", noteEn: "First: pea soup • Main: cheese cutlet with mashed potatoes • Dessert: syrniki • Extra: crab stick salad portion — 3 BYN", image: combo4Img, dayBadgeRu: "Только во вторник", dayBadgeEn: "Tuesday only" },
 ];

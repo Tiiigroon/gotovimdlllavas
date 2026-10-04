@@ -74,8 +74,8 @@ const Prices = () => {
             </p>
             <p className="font-body text-sm text-foreground">
               🍱 {lang === "ru"
-                ? "Комплексные обеды — 12 руб. Комплексы №1 и №2 можно заказать и получить ТОЛЬКО во вторник и четверг, комплексы №3 и №4 — ТОЛЬКО в среду и пятницу. Бесплатная доставка на один адрес от 2-х комплексов. Блюда в пределах комплекса можно изменять по вашему желанию. Заказ на следующий день не позднее 19:00. Доставка с 11:30 до 13:30."
-                : "Lunch sets — 12 BYN. Sets №1 and №2 can be ordered and delivered ONLY on Tuesdays and Thursdays, sets №3 and №4 — ONLY on Wednesdays and Fridays. Free delivery to one address from 2 sets. Dishes within a set can be changed to your liking. Order for the next day no later than 19:00. Delivery 11:30–13:30."}
+                ? "Комплексные обеды — 12 руб. В понедельник доступны комплексы №1 и №2 из меню понедельника, во вторник — комплексы №1 и №2 из меню вторника. Бесплатная доставка на один адрес от 2-х комплексов. Блюда в пределах комплекса можно изменять по вашему желанию. Заказ на следующий день не позднее 19:00. Доставка с 11:30 до 13:30."
+                : "Lunch sets — 12 BYN. Monday menu sets №1 and №2 are available on Monday; Tuesday menu sets №1 and №2 are available on Tuesday. Free delivery to one address from 2 sets. Dishes within a set can be changed to your liking. Order for the next day no later than 19:00. Delivery 11:30–13:30."}
             </p>
           </div>
 

@@ -1,1 +1,2 @@
-- Add Lunch Combos tab (Комплексные обеды): 4 combos, 12 BYN each, delivery info, matching photos
+- [x] Add Lunch Combos tab (Комплексные обеды): 4 combos, 12 BYN each, delivery info, matching photos
+- [x] Update lunch sets for Monday and Tuesday with matching photos and optional 3 BYN salads
