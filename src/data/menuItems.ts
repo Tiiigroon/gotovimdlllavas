@@ -68,6 +68,9 @@ export interface MenuItem {
   image: string;
   dayBadgeRu?: string;
   dayBadgeEn?: string;
+  extraSaladRu?: string;
+  extraSaladEn?: string;
+  extraSaladPrice?: number;
 }
 
 export const menuItems: MenuItem[] = [
@@ -145,8 +148,8 @@ export const menuItems: MenuItem[] = [
   { id: "f6", nameRu: "Вареники с картошкой", nameEn: "Vareniki with potato", price: 18, unit: "kg", category: "frozen", image: varenikiPotatoImg },
 
   // Комплексные обеды — 12 руб, доставка 11:30–13:30
-  { id: "lc1", nameRu: "Комплекс №1", nameEn: "Lunch set №1", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: щи из свежей капусты • 2-ое: котлеты печёночные + макароны • 3-е: блинчики творог, яблоко, банан", noteEn: "First: fresh cabbage shchi • Main: liver cutlets with pasta • Dessert: cottage cheese, apple & banana crepes", image: combo1Img, dayBadgeRu: "Только в понедельник", dayBadgeEn: "Monday only" },
-  { id: "lc2", nameRu: "Комплекс №2", nameEn: "Lunch set №2", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: сырный суп • 2-ое: мясо, запечённое под помидором + картофельные дольки • 3-е: оладушки со сметаной • Дополнительно: порция салата оливье — 3 руб.", noteEn: "First: cheese soup • Main: baked meat with tomato and potato wedges • Dessert: pancakes with sour cream • Extra: Olivier salad portion — 3 BYN", image: combo2Img, dayBadgeRu: "Только в понедельник", dayBadgeEn: "Monday only" },
-  { id: "lc3", nameRu: "Комплекс №1", nameEn: "Lunch set №1", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: борщ • 2-ое: куриное филе в кляре + гречка • 3-е: блинчики с карамелизированным яблоком", noteEn: "First: borscht • Main: battered chicken fillet with buckwheat • Dessert: crepes with caramelized apple", image: combo3Img, dayBadgeRu: "Только во вторник", dayBadgeEn: "Tuesday only" },
-  { id: "lc4", nameRu: "Комплекс №2", nameEn: "Lunch set №2", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: суп гороховый • 2-ое: котлета с сыром + картофельное пюре • 3-е: сырники • Дополнительно: порция салата с крабовыми палочками — 3 руб.", noteEn: "First: pea soup • Main: cheese cutlet with mashed potatoes • Dessert: syrniki • Extra: crab stick salad portion — 3 BYN", image: combo4Img, dayBadgeRu: "Только во вторник", dayBadgeEn: "Tuesday only" },
+  { id: "lc1", nameRu: "Комплекс №1", nameEn: "Lunch set №1", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: щи из свежей капусты • 2-ое: котлеты печёночные + макароны • 3-е: блинчики творог, яблоко, банан", noteEn: "First: fresh cabbage shchi • Main: liver cutlets with pasta • Dessert: cottage cheese, apple & banana crepes", image: combo1Img, dayBadgeRu: "Только в понедельник", dayBadgeEn: "Monday only", extraSaladRu: "Салат оливье", extraSaladEn: "Olivier salad", extraSaladPrice: 3 },
+  { id: "lc2", nameRu: "Комплекс №2", nameEn: "Lunch set №2", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: сырный суп • 2-ое: мясо, запечённое под помидором + картофельные дольки • 3-е: оладушки со сметаной", noteEn: "First: cheese soup • Main: baked meat with tomato and potato wedges • Dessert: pancakes with sour cream", image: combo2Img, dayBadgeRu: "Только в понедельник", dayBadgeEn: "Monday only", extraSaladRu: "Салат оливье", extraSaladEn: "Olivier salad", extraSaladPrice: 3 },
+  { id: "lc3", nameRu: "Комплекс №1", nameEn: "Lunch set №1", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: борщ • 2-ое: куриное филе в кляре + гречка • 3-е: блинчики с карамелизированным яблоком", noteEn: "First: borscht • Main: battered chicken fillet with buckwheat • Dessert: crepes with caramelized apple", image: combo3Img, dayBadgeRu: "Только во вторник", dayBadgeEn: "Tuesday only", extraSaladRu: "Салат с крабовыми палочками", extraSaladEn: "Crab stick salad", extraSaladPrice: 3 },
+  { id: "lc4", nameRu: "Комплекс №2", nameEn: "Lunch set №2", price: 12, unit: "pcs", category: "lunch", noteRu: "1-ое: суп гороховый • 2-ое: котлета с сыром + картофельное пюре • 3-е: сырники", noteEn: "First: pea soup • Main: cheese cutlet with mashed potatoes • Dessert: syrniki", image: combo4Img, dayBadgeRu: "Только во вторник", dayBadgeEn: "Tuesday only", extraSaladRu: "Салат с крабовыми палочками", extraSaladEn: "Crab stick salad", extraSaladPrice: 3 },
 ];
