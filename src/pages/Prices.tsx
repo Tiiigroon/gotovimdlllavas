@@ -5,12 +5,22 @@ import { motion } from "framer-motion";
 import { ShoppingCart, Check } from "lucide-react";
 import mountainsImg from "@/assets/mountains-banner.jpg";
 import { menuItems, type MenuItem } from "@/data/menuItems";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const Prices = () => {
   const { t, lang } = useLanguage();
   const { addItem } = useCart();
   const [activeCategory, setActiveCategory] = useState("all");
   const [addedIds, setAddedIds] = useState<Set<string>>(new Set());
+  const [pendingLunch, setPendingLunch] = useState<MenuItem | null>(null);
 
   const categories = [
     { key: "all", labelRu: "Все", labelEn: "All" },
@@ -35,14 +45,37 @@ const Prices = () => {
     return labels[unit]?.[lang] || unit;
   };
 
-  const handleAdd = (item: MenuItem) => {
-    addItem({ id: item.id, nameRu: item.nameRu, nameEn: item.nameEn, price: item.price });
-    setAddedIds((prev) => new Set(prev).add(item.id));
+  const markAdded = (itemId: string) => {
+    setAddedIds((prev) => new Set(prev).add(itemId));
     setTimeout(() => setAddedIds((prev) => {
       const next = new Set(prev);
-      next.delete(item.id);
+      next.delete(itemId);
       return next;
     }), 1500);
+  };
+
+  const addLunch = (item: MenuItem, withSalad: boolean) => {
+    addItem({ id: item.id, nameRu: item.nameRu, nameEn: item.nameEn, price: item.price });
+    if (withSalad && item.extraSaladRu && item.extraSaladEn && item.extraSaladPrice) {
+      const dayKey = item.dayBadgeEn === "Monday only" ? "monday" : "tuesday";
+      addItem({
+        id: `lunch-salad-${dayKey}`,
+        nameRu: `${item.extraSaladRu} (к комплексу)`,
+        nameEn: `${item.extraSaladEn} (lunch set add-on)`,
+        price: item.extraSaladPrice,
+      });
+    }
+    markAdded(item.id);
+    setPendingLunch(null);
+  };
+
+  const handleAdd = (item: MenuItem) => {
+    if (item.category === "lunch" && item.extraSaladRu) {
+      setPendingLunch(item);
+      return;
+    }
+    addItem({ id: item.id, nameRu: item.nameRu, nameEn: item.nameEn, price: item.price });
+    markAdded(item.id);
   };
 
   return (
@@ -129,11 +162,19 @@ const Prices = () => {
                       💡 {lang === "ru" ? item.noteRu : item.noteEn}
                     </p>
                   )}
+                  {item.extraSaladRu && item.extraSaladEn && item.extraSaladPrice && (
+                    <p className="font-body text-sm text-foreground mt-2 font-medium">
+                      + {lang === "ru" ? item.extraSaladRu : item.extraSaladEn} — {item.extraSaladPrice} BYN
+                    </p>
+                  )}
                   <div className="flex items-center justify-between mt-auto pt-3">
                     <span className="font-display text-xl font-bold text-secondary">
                       {item.price} BYN<span className="text-sm font-normal text-muted-foreground">/{unitLabel(item.unit)}</span>
                     </span>
-                    <button
+                    <Button
+                      type="button"
+                      variant="ghost"
+                      size="sm"
                       onClick={() => handleAdd(item)}
                       className={`flex items-center gap-2 px-3 py-1.5 rounded-lg font-body text-sm font-medium transition-colors ${
                         addedIds.has(item.id)
@@ -143,7 +184,7 @@ const Prices = () => {
                     >
                       {addedIds.has(item.id) ? <Check size={16} /> : <ShoppingCart size={16} />}
                       {addedIds.has(item.id) ? t("prices.added") : t("prices.add")}
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </motion.div>
@@ -151,6 +192,37 @@ const Prices = () => {
           </div>
         </div>
       </section>
+
+      <Dialog open={pendingLunch !== null} onOpenChange={(open) => !open && setPendingLunch(null)}>
+        <DialogContent className="max-w-md rounded-lg">
+          <DialogHeader>
+            <DialogTitle className="font-display text-2xl text-foreground">
+              {lang === "ru" ? "Добавить салат?" : "Add a salad?"}
+            </DialogTitle>
+            <DialogDescription className="font-body text-base leading-relaxed">
+              {pendingLunch && (lang === "ru"
+                ? `${pendingLunch.extraSaladRu} — дополнительная порция за ${pendingLunch.extraSaladPrice} BYN.`
+                : `${pendingLunch.extraSaladEn} — an extra portion for ${pendingLunch.extraSaladPrice} BYN.`)}
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="gap-2 sm:space-x-0">
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => pendingLunch && addLunch(pendingLunch, false)}
+            >
+              {lang === "ru" ? "Без салата — 12 BYN" : "Without salad — 12 BYN"}
+            </Button>
+            <Button
+              type="button"
+              variant="secondary"
+              onClick={() => pendingLunch && addLunch(pendingLunch, true)}
+            >
+              {lang === "ru" ? "Добавить салат — 15 BYN" : "Add salad — 15 BYN"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
